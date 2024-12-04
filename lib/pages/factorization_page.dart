@@ -53,7 +53,7 @@ class _FactorizationPageState extends State<FactorizationPage> {
                 icon: Icon(Icons.calculate, color: Colors.white),
                 label: Text("Calcular Factorización"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.indigo,
+                  backgroundColor: Colors.lightGreen,
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 ),
               ),
