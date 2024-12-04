@@ -1,4 +1,6 @@
 import 'package:appmovil_principios/pages/FactorialPage.dart';
+import 'package:appmovil_principios/pages/factorization_page.dart';
+import 'package:appmovil_principios/pages/prime_numbers_page.dart';
 import 'package:flutter/material.dart';
 import 'MCDPage.dart';
 
@@ -69,12 +71,18 @@ class HomePageState extends State<HomePage> {
                       Icons.calculate,
                       MCDPage(),
                     ),
-                    // _buildOperationButton(
-                    //   context,
-                    //   'Factorización',
-                    //   Icons.developer_board,
-                    //   FactorizacionPage(),
-                    // )
+                    _buildOperationButton(
+                      context,
+                      'Factorización',
+                      Icons.developer_board,
+                      FactorizationPage(),
+                    ),
+                    _buildOperationButton(
+                      context,
+                      'Numeros Primos',
+                      Icons.numbers,
+                      PrimeNumbersPage(),
+                    )
                   ],
                 ),
               ],
@@ -88,7 +96,7 @@ class HomePageState extends State<HomePage> {
   Widget _buildOperationButton(
       BuildContext context, String title, IconData icon, Widget nextPage) {
     return SizedBox(
-      width: 130,
+      width: 140,
       height: 100,
       child: ElevatedButton(
         onPressed: () {
