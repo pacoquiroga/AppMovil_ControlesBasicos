@@ -11,7 +11,7 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ejercicios con Principios de Diseño'),
+        title: const Text('App Móvil Controles Básicos'),
         backgroundColor: const Color.fromARGB(255, 57, 63, 65),
         titleTextStyle: const TextStyle(
           color: Color(0xFFF1F0E8),
