@@ -1,3 +1,4 @@
+import 'package:appmovil_principios/pages/FactorialPage.dart';
 import 'package:flutter/material.dart';
 import 'MCDPage.dart';
 
@@ -44,10 +45,10 @@ class HomePageState extends State<HomePage> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 30),
                 Wrap(
-                  spacing: 20,
-                  runSpacing: 20,
+                  spacing: 30,
+                  runSpacing: 30,
                   alignment: WrapAlignment.center,
                   children: [
                     // _buildOperationButton(
@@ -56,12 +57,12 @@ class HomePageState extends State<HomePage> {
                     //   Icons.abc,
                     //   ASCIIPage(),
                     // ),
-                    // _buildOperationButton(
-                    //   context,
-                    //   'Factorial',
-                    //   Icons.warning,
-                    //   FactorialPage(),
-                    // ),
+                    _buildOperationButton(
+                      context,
+                      'Factorial',
+                      Icons.warning,
+                      FactorialPage(),
+                    ),
                     _buildOperationButton(
                       context,
                       'MCD',
@@ -87,7 +88,7 @@ class HomePageState extends State<HomePage> {
   Widget _buildOperationButton(
       BuildContext context, String title, IconData icon, Widget nextPage) {
     return SizedBox(
-      width: 100,
+      width: 130,
       height: 100,
       child: ElevatedButton(
         onPressed: () {
