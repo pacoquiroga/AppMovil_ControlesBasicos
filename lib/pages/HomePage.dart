@@ -1,6 +1,7 @@
 import 'package:appmovil_principios/pages/FactorialPage.dart';
 import 'package:flutter/material.dart';
 import 'MCDPage.dart';
+import 'AsciiPage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -51,12 +52,12 @@ class HomePageState extends State<HomePage> {
                   runSpacing: 30,
                   alignment: WrapAlignment.center,
                   children: [
-                    // _buildOperationButton(
-                    //   context,
-                    //   'ASCII',
-                    //   Icons.abc,
-                    //   ASCIIPage(),
-                    // ),
+                    _buildOperationButton(
+                      context,
+                      'ASCII',
+                      Icons.abc,
+                      AsciiPage(),
+                    ),
                     _buildOperationButton(
                       context,
                       'Factorial',
